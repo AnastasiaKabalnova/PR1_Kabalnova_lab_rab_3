@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("input").keypress(function () {
+           $("input").css("background-color","yellow");
+   });
+
+    });
+//   jQuery(window).resize();
+</script>
+</head>
+<body>
+<h2>This is a heading 2</h2>
+<p align="centre">This is a paragraph.</p>
+<p href>Нечетный элемент.</p>
+<p >Четный элемент.</p>
+<input>  </input>
+
+</body>
+
+</html>
