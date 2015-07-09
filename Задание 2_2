@@ -1,0 +1,31 @@
+<!DOCTYPE html> /*при наведении на align он скрывается при наведении на H2 обратно появляется*/
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+   $(document).ready(function(){
+
+      $("p[align=centre]").dblclick(function ()
+      {
+         $(this).hide();
+      });
+      $("h2").dblclick(function ()
+      {
+
+         $("p[align=centre]").show();
+
+     });
+   });
+</script>
+
+</head>
+<body>
+<h2>This is a heading 2</h2>
+<p align="centre">This is a paragraph.</p>
+<p >Нечетный элемент.</p>
+<p >Четный элемент.</p>
+
+</body>
+
+</html>
