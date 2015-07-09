@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+   $(document).ready(function(){
+
+      //var title = $("em").attr("title");
+      //$("div").text(title);
+      $("#but1").click(function ()
+      {
+         $("p[align=centre]").hide();
+      });
+      $("#but2").click(function ()
+      {
+
+         $("p[align=centre]").show();
+
+      });
+   });
+</script>
+
+</head>
+<body>
+<h2>This is a heading 2</h2></tr>
+<p align="centre">This is a paragraph.</p>
+<p title>Нечетный элемент.</p>
+<p class="msnormal">Четный элемент.</p>
+<button id="but1">Click me</button>
+<button id="but2">Click me for show</button>
+
+</body>
+
+</html>
