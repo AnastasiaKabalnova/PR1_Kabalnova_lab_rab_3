@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+var i=1;
+$(document).ready(function () 
+{
+$("#but1").click(function () 
+   {
+      //While(i<100)
+         $("#div1").fadeIn();
+         $("#div2").fadeIn();
+         $("#div3").fadeIn();
+         $("#div4").fadeIn();
+         $("#div5").fadeIn();
+         $("#div1").delay(800).fadeOut(1000);
+         $("#div2").delay(800).fadeOut(2000);
+         $("#div3").delay(800).fadeOut(3000);
+         $("#div4").delay(800).fadeOut(4000);
+         $("#div5").delay(800).fadeOut(5000);
+       
+       $("#div5").delay(800).fadeIn(5000);
+       $("#div4").delay(2800).fadeIn(5000);
+       $("#div3").delay(4800).fadeIn(5000);
+       $("#div2").delay(6800).fadeIn(5000);
+       $("#div1").delay(8800).fadeIn(5000);
+       //i++;
+
+   });
+    //i=0;
+});
+</script>
+</head>
+
+<div id="div1" style="height:40px; width:40px; background: orange; display:none;" ></div>
+<div id="div2" style="height:40px; width:40px; background: navajowhite; display:none;" ></div>
+<div id="div3" style="height:40px; width:40px; background: aqua; display:none;" ></div>
+<div id="div4" style="height:40px; width:40px; background: palevioletred; display:none;" ></div>
+<div id="div5" style="height:40px; width:40px; background: magenta; display:none;" ></div>
+<button id="but1">Click me</button>
+
+
+</body>
+
+</html>
