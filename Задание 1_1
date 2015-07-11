@@ -15,7 +15,7 @@ $("#but1").click(function ()
 $("#but2").click(function () 
    {
     
-$("p.msnormal:odd").hide();
+$("p.msnormal:odd").show();
 
    });
 });
