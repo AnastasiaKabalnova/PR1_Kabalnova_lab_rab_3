@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+var i=0; var a=0;
+
+
+$(document).ready(function () 
+{
+    $("#but1").click(function ()
+   {
+       while (i<200)
+       {   
+           $("#d1").fadeIn();
+           $("#d2").fadeIn();
+           $("#d2").delay(2000).fadeOut(2000);
+           i++;
+	}
+           });
+
+    $("#but2").click(function ()
+      {
+	i=200;
+     $("#d2").stop($("#but1").click());
+     $("#d1").fadeIn();
+     $("#d2").fadeIn();
+   
+   });
+});
+</script>
+</head>
+
+<img id="d1" class="p" style="width:80px;height:80px;display:none" src="F:\ПРАКТИКА\III\How.jpg" width="124" height="100">
+<img id="d2" style="width:80px;height:80px;display:none" src="F:\ПРАКТИКА\III\How.jpg" width="124" height="100">
+<p></p>
+<button id="but1">Click me</button>
+<button id="but2">Click me for show</button>
+
+</body>
+
+</html>
