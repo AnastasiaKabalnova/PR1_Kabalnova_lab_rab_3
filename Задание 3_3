@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js">
+</script>
+<script type="text/javascript">
+var i=0;
+$(document).ready(function () 
+{
+$("#but1").click(function () 
+   {
+	
+      while (i<5)
+          {
+              i++;
+              $("p:odd").fadeIn();
+              $("p:even").fadeIn();
+              $("p:odd").delay(2000).fadeOut();
+           }
+     while ((i>=5) && (i<9))
+           {
+              i++;
+              $("p:odd").fadeIn();
+              $("p:even").fadeIn();
+              $("p:even").delay(2000).fadeOut(2000);
+           }
+   });
+
+});
+</script>
+</head>
+
+<p style="display:none">0</p>
+<p style="display:none">1</p>
+<p style="display:none">2</p>
+<p style="display:none">3</p>
+<p style="display:none">4</p>
+<p style="display:none">5</p>
+<p style="display:none">6</p>
+<p style="display:none">7</p>
+<p style="display:none">8</p>
+<p style="display:none">9</p>
+<button id="but1">Click me</button>
+
+
+</body>
+
+</html>
